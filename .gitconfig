@@ -1,0 +1,27 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Anthony Ongaro
+	email = aongaro@gmail.com
+[core]
+	editor = atom --wait
+	excludesfile = /Users/anthonyongaro/.gitignore_global
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
+[alias]
+	c = checkout
+	c- = checkout -
+	ca = commit -am
+	cb = checkout -b
+	a = add .
+	l = log --graph --online
+	s = stash
+	sp = stash pop
+	ss = stash save
+	sl = stash list
+	
