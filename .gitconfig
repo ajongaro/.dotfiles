@@ -5,8 +5,7 @@
 	required = true
 [user]
 	name = Anthony Ongaro
-	email = aongaro@gmail.com
-[core]
+	email = 43623494+ajongaro@users.noreply.github.com
 	editor = atom --wait
 	excludesfile = /Users/anthonyongaro/.gitignore_global
 [pull]
@@ -20,8 +19,8 @@
 	cb = checkout -b
 	a = add .
 	l = log --graph --online
-	s = stash
+	s = status
+	st = stash
 	sp = stash pop
 	ss = stash save
 	sl = stash list
-	
