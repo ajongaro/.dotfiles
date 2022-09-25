@@ -13,14 +13,3 @@
 [init]
 	defaultBranch = main
 [alias]
-	c = checkout
-	c- = checkout -
-	ca = commit -am
-	cb = checkout -b
-	a = add .
-	l = log --graph --oneline
-	s = status
-	st = stash
-	sp = stash pop
-	ss = stash save
-	sl = stash list
