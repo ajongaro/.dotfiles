@@ -29,3 +29,6 @@ alias	gsl="git stash list"
 alias l="exa --icons --sort=ext"
 alias ls="exa --icons --all --sort=ext"
 alias tree="exa --icons --tree"
+
+# Vim to NVim
+alias vim="nvim"
