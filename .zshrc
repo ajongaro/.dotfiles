@@ -9,11 +9,12 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 eval "$(rbenv init -)"
 
+# Get thefuck to work (esc-esc) to fix last command
+eval $(thefuck --alias)
+
+
 # this is to get homebrew M1 vs Rosetta/Intel to work properly
 export PATH=$HOME/bin:/opt/homebrew/bin:/usr/local/bin:$PATH
-
-# praying this fixes pg gem (it did not)
-# export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -23,6 +24,10 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
+
+# Set ZSH_CUSTOM folder
+ZSH_CUSTOM=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}
+
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -90,9 +95,16 @@ plugins=(
   web-search
   history
   macos
+  copypath
+  thefuck
+  cd-ls
 )
 
 source $ZSH/oh-my-zsh.sh
+
+# source for cd-ls plugin (above)
+source ${ZDOTDIR:-~}/.zplugins/cd-ls/cd-ls.zsh
+
 
 # User configuration
 
