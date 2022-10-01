@@ -87,6 +87,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(
   git
   zsh-autosuggestions
+  web-search
+  history
+  macos
 )
 
 source $ZSH/oh-my-zsh.sh
