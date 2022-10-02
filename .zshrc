@@ -10,8 +10,10 @@ fi
 eval "$(rbenv init -)"
 
 # Get thefuck to work (esc-esc) to fix last command
-eval $(thefuck --alias)
+# eval $(thefuck --alias)
 
+# source for cd-ls plugin (below)
+source ${ZDOTDIR:-~}/.zplugins/cd-ls/cd-ls.zsh
 
 # this is to get homebrew M1 vs Rosetta/Intel to work properly
 export PATH=$HOME/bin:/opt/homebrew/bin:/usr/local/bin:$PATH
@@ -19,21 +21,12 @@ export PATH=$HOME/bin:/opt/homebrew/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
+# Set name of the theme to load
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set ZSH_CUSTOM folder
 ZSH_CUSTOM=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}
-
-
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in $ZSH/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -94,20 +87,26 @@ plugins=(
   zsh-autosuggestions
   web-search
   history
+  copyfile
   macos
   copypath
   thefuck
   cd-ls
+  emoji
+  colored-man-pages
 )
 
+# oh-my-zsh source
 source $ZSH/oh-my-zsh.sh
 
-# source for cd-ls plugin (above)
-source ${ZDOTDIR:-~}/.zplugins/cd-ls/cd-ls.zsh
+# syntax highlighting (installed via brew)
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# zsh autocomplete plugin
+source ~/.oh-my-zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 
 # User configuration
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -131,7 +130,6 @@ source ${ZDOTDIR:-~}/.zplugins/cd-ls/cd-ls.zsh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
