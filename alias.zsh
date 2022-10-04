@@ -15,6 +15,7 @@ alias mod1="cd ~/documents/turing/module1"
 alias mod2="cd ~/documents/turing/module2"
 alias aliases="atom ~/.oh-my-zsh/custom/alias.zsh"
 alias dot="cd ~/.dotfiles"
+alias notes="cd ~/documents/dev-notes"
 alias vimconfig="vim ~/.dotfiles/init.vim"
 
 # Git
