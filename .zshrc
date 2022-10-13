@@ -12,6 +12,10 @@ eval "$(rbenv init -)"
 # Get thefuck to work (esc-esc) to fix last command
 # eval $(thefuck --alias)
 
+export PKG_CONFIG_PATH="/opt/homebrew/opt/libpq/lib/pkgconfig"
+export LDFLAGS="-L/opt/homebrew/opt/libpq/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
+
 # source for cd-ls plugin (below)
 source ${ZDOTDIR:-~}/.zplugins/cd-ls/cd-ls.zsh
 
@@ -152,3 +156,4 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"

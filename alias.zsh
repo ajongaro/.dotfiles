@@ -9,14 +9,19 @@ alias cp='cp -i'
 # Navigation
 alias t="take" # oh-my-zsh shortcut for mkdir -> cd into
 alias up="cd .."
-alias home="~/documents"
+alias blog="cd ~/documents/blog"
+alias docs="~/documents"
 alias turing="cd ~/documents/turing/"
-alias mod1="cd ~/documents/turing/module1"
-alias mod2="cd ~/documents/turing/module2"
-alias aliases="atom ~/.oh-my-zsh/custom/alias.zsh"
+alias mod1="cd ~/documents/turing/1module"
+alias mod2="cd ~/documents/turing/2module"
+alias aliases="code ~/.oh-my-zsh/custom/alias.zsh"
 alias dot="cd ~/.dotfiles"
 alias notes="cd ~/documents/dev-notes"
 alias vimconfig="vim ~/.dotfiles/init.vim"
+
+alias housefocus="spotify play uri spotify:playlist:37i9dQZF1DX8wtrGDH81Oa"
+alias emotions="spotify play uri spotify:playlist:0am4S4XguaT6JOfXdYQCw7"
+alias focusflow="spotify play uri spotify:playlist:37i9dQZF1DWZZbwlv3Vmtr"
 
 # Git
 alias g="git"
@@ -40,3 +45,6 @@ alias tree="exa --icons --tree"
 
 # Vim to NVim
 alias vim="nvim"
+
+# AJOngaro Blog
+alias compose="node ~/Documents/ajongaro.github.io/scripts/compose.js"
