@@ -19,6 +19,9 @@ alias dot="cd ~/.dotfiles"
 alias notes="cd ~/documents/dev-notes"
 alias vimconfig="vim ~/.dotfiles/init.vim"
 
+# Turing Stuff
+alias studyhall="open https://turingschool.zoom.us/my/cohort2210be"
+
 # Spotify
 alias housefocus="spotify play uri spotify:playlist:37i9dQZF1DX8wtrGDH81Oa"
 alias emotions="spotify play uri spotify:playlist:0am4S4XguaT6JOfXdYQCw7"
