@@ -19,9 +19,12 @@ alias dot="cd ~/.dotfiles"
 alias notes="cd ~/documents/dev-notes"
 alias vimconfig="vim ~/.dotfiles/init.vim"
 
+# Spotify
 alias housefocus="spotify play uri spotify:playlist:37i9dQZF1DX8wtrGDH81Oa"
 alias emotions="spotify play uri spotify:playlist:0am4S4XguaT6JOfXdYQCw7"
 alias focusflow="spotify play uri spotify:playlist:37i9dQZF1DWZZbwlv3Vmtr"
+alias codemode="spotify play uri spotify:playlist:37i9dQZF1DX5trt9i14X7j"
+alias piano="spotify play uri spotify:playlist:37i9dQZF1DX4sWSpwq3LiO"
 
 # Git
 alias g="git"
