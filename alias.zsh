@@ -21,6 +21,7 @@ alias vimconfig="vim ~/.dotfiles/init.vim"
 
 # Turing Stuff
 alias studyhall="open https://turingschool.zoom.us/my/cohort2210be"
+alias goldaross="open https://turingschool.zoom.us/my/goldarosshouse"
 
 # Spotify
 alias housefocus="spotify play uri spotify:playlist:37i9dQZF1DX8wtrGDH81Oa"
@@ -33,10 +34,9 @@ alias piano="spotify play uri spotify:playlist:37i9dQZF1DX4sWSpwq3LiO"
 alias g="git"
 alias gc="git checkout"
 alias gc-="git checkout -" # checks out last branch
-alias	gca="git commit -am"
 alias	gcb="git checkout -b"
-alias	ga="git add ."
-alias gp="git push -u origin main"
+alias	ga="git add"
+alias gp="git push origin main"
 alias	gl="git log --graph --oneline"
 alias	gs="git status"
 alias	gst="git stash"
