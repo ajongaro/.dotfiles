@@ -14,14 +14,16 @@ alias docs="~/documents"
 alias turing="cd ~/documents/turing/"
 alias mod1="cd ~/documents/turing/1module"
 alias mod2="cd ~/documents/turing/2module"
-alias aliases="code ~/.oh-my-zsh/custom/alias.zsh"
+alias aliases="vim ~/.oh-my-zsh/custom/alias.zsh"
 alias dot="cd ~/.dotfiles"
 alias notes="cd ~/documents/dev-notes"
 alias vimconfig="vim ~/.dotfiles/init.vim"
+alias cf="cd ~/documents/turing/1module/connect_four" 
 
 # Turing Stuff
 alias studyhall="open https://turingschool.zoom.us/my/cohort2210be"
 alias goldaross="open https://turingschool.zoom.us/my/goldarosshouse"
+alias anthzoom="open http://bt2.co/zoom"
 
 # Spotify
 alias housefocus="spotify play uri spotify:playlist:37i9dQZF1DX8wtrGDH81Oa"
@@ -51,6 +53,9 @@ alias tree="exa --icons --tree"
 
 # Vim to NVim
 alias vim="nvim"
+
+# Launch VS Code w/ Directory
+alias go="code ."
 
 # AJOngaro Blog
 alias compose="node ~/Documents/ajongaro.github.io/scripts/compose.js"
