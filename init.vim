@@ -6,13 +6,12 @@ Plug 'morhetz/gruvbox'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'junegunn/vim-emoji'
 Plug 'ThePrimeagen/vim-apm'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 " vim-plug settings end here
 call plug#end()
 
-
-
 let g:gruvbox_termcolors = '256'
-
 
 autocmd vimenter * ++nested colorscheme gruvbox
 
@@ -30,5 +29,3 @@ set incsearch
 set scrolloff=8
 set signcolumn=yes
 set colorcolumn=80
-
-
