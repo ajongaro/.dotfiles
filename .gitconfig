@@ -6,7 +6,7 @@
 [user]
 	name = Anthony Ongaro
 	email = 43623494+ajongaro@users.noreply.github.com
-	editor = atom --wait
+	editor = code --wait
 	excludesfile = /Users/anthonyongaro/.gitignore_global
 [pull]
 	rebase = false
