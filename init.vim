@@ -1,20 +1,23 @@
-" vim-plug settings
+" VIM-PLUG SETTINGS
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
-
-" plugin list
 Plug 'morhetz/gruvbox'
-Plug 'nvim-telescope/telescope.nvim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-endwise'
 Plug 'junegunn/vim-emoji'
 Plug 'ThePrimeagen/vim-apm'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-" vim-plug settings end here
+" Plug 'nvim-telescope/telescope.nvim'
 call plug#end()
 
 let g:gruvbox_termcolors = '256'
 
 autocmd vimenter * ++nested colorscheme gruvbox
 
+" GENERAL SETTINGS
 set tabstop=2 softtabstop=2
 set shiftwidth=2
 set expandtab
