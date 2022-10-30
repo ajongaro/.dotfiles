@@ -44,6 +44,7 @@ alias	gst="git stash"
 alias	gsp="git stash pop"
 alias	gss="git stash save"
 alias	gsl="git stash list"
+alias grsh="git reset --soft HEAD^" # undo last unpushed commit
 
 # Switch ls to exa (install exa via homebrew)
 alias l="exa --icons --sort=ext"
