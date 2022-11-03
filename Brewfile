@@ -20,8 +20,10 @@ brew "python@3.9"
 brew "rbenv"
 # Vi 'workalike' with many additional features
 brew "vim"
+# Neovim
+brew "neovim"
+
 # Casks
-cask "atom"
 cask "google-chrome"
 cask "visual-studio-code"
 cask "slack"
