@@ -6,6 +6,9 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
 
+# HELPERS 
+alias rs="rspec -fd"
+
 # NAVIGATION
 alias t="take" # oh-my-zsh shortcut for mkdir -> cd into
 alias up="cd .."
@@ -18,7 +21,7 @@ alias aliases="vim ~/.oh-my-zsh/custom/alias.zsh"
 alias dot="cd ~/.dotfiles"
 alias notes="cd ~/documents/dev-notes"
 alias vimconfig="vim ~/.dotfiles/init.vim"
-alias cf="cd ~/documents/turing/1module/connect_four" 
+alias enigma="cd ~/documents/turing/1module/enigma"
 
 # TURING STUFF
 alias studyhall="open https://turingschool.zoom.us/my/cohort2210be"
