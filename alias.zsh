@@ -8,6 +8,7 @@ alias cp='cp -i'
 
 # HELPERS 
 alias rs="rspec -fd"
+alias ber="bundle exec rspec -fd"
 
 # NAVIGATION
 alias t="take" # oh-my-zsh shortcut for mkdir -> cd into
@@ -15,13 +16,12 @@ alias up="cd .."
 alias blog="cd ~/documents/blog"
 alias docs="~/documents"
 alias turing="cd ~/documents/turing/"
-alias mod1="cd ~/documents/turing/1module"
 alias mod2="cd ~/documents/turing/2module"
 alias aliases="vim ~/.oh-my-zsh/custom/alias.zsh"
 alias dot="cd ~/.dotfiles"
 alias notes="cd ~/documents/dev-notes"
 alias vimconfig="vim ~/.dotfiles/init.vim"
-alias enigma="cd ~/documents/turing/1module/enigma"
+alias music="cd ~/documents/turing/2module/music_store_manager"
 
 # TURING STUFF
 alias studyhall="open https://turingschool.zoom.us/my/cohort2210be"
