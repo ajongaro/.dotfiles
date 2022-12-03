@@ -1451,7 +1451,7 @@
 		</dict>
 	</dict>
 	<key>Default Arrangement Name</key>
-	<string>14" Terminal</string>
+	<string>3Split</string>
 	<key>Default Bookmark Guid</key>
 	<string>A8B331E5-F2DB-46FA-9AAA-D366F8AD1E19</string>
 	<key>DisableFullscreenTransparency</key>
@@ -1795,8 +1795,10 @@
 				<key>Red Component</key>
 				<real>0.10980392247438431</real>
 			</dict>
+			<key>Background Image Location</key>
+			<string>/Users/anthonyongaro/Downloads/Sort/DALL·E 2022-09-29 20.28.01.png</string>
 			<key>Background Image Mode</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>Badge Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1921,6 +1923,8 @@
 			<real>1</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
+			<key>Initial Use Transparency</key>
+			<true/>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -2584,7 +2588,7 @@
 			<key>Thin Strokes</key>
 			<integer>3</integer>
 			<key>Transparency</key>
-			<real>0.12217420212765959</real>
+			<real>0.0</real>
 			<key>Unicode Version</key>
 			<integer>9</integer>
 			<key>Unlimited Scrollback</key>
@@ -3662,6 +3666,8 @@
 	<false/>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
+	<key>PerPaneBackgroundImage</key>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -3701,12 +3707,20 @@
 	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
 	<true/>
+	<key>SeparateStatusBarsPerPane</key>
+	<false/>
+	<key>ShowPaneTitles</key>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>StatusBarPosition</key>
 	<integer>0</integer>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>5</integer>
+	<key>TerminalMargin</key>
+	<integer>14</integer>
+	<key>TerminalVMargin</key>
+	<integer>13</integer>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>Window Arrangements</key>
