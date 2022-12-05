@@ -7,10 +7,11 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-repeat'
-Plug 'junegunn/vim-emoji'
 Plug 'ThePrimeagen/vim-apm'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'ThePrimeagen/vim-be-good'
+Plug 'easymotion/vim-easymotion'
 " Plug 'nvim-telescope/telescope.nvim'
 call plug#end()
 

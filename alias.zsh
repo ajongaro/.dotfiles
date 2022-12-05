@@ -21,7 +21,8 @@ alias aliases="vim ~/.oh-my-zsh/custom/alias.zsh"
 alias dot="cd ~/.dotfiles"
 alias notes="cd ~/documents/dev-notes"
 alias vimconfig="vim ~/.dotfiles/init.vim"
-alias music="cd ~/documents/turing/2module/music_store_manager"
+alias music="cd ~/documents/turing/2module/music_store_app"
+alias go_test="music; bleh"
 
 # TURING STUFF
 alias studyhall="open https://turingschool.zoom.us/my/cohort2210be"
@@ -47,6 +48,7 @@ alias	gst="git stash"
 alias	gsp="git stash pop"
 alias	gss="git stash save"
 alias	gsl="git stash list"
+alias dangit="git commit --ammend" # edit last commit msg and add staged to that commit
 alias whoops="git reset --soft HEAD^" # undo last unpushed commit
 
 # Switch ls to exa (install exa via homebrew)
