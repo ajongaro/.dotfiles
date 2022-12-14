@@ -24,12 +24,10 @@ alias dot="cd ~/.dotfiles"
 alias notes="cd ~/documents/dev-notes"
 alias vimconfig="vim ~/.dotfiles/init.vim"
 alias music="cd ~/documents/turing/2module/music_store_app"
-alias go_test="music; bleh"
 
 # TURING STUFF
 alias studyhall="open https://turingschool.zoom.us/my/cohort2210be"
 alias goldaross="open https://turingschool.zoom.us/my/goldarosshouse"
-alias anthzoom="open http://bt2.co/zoom"
 
 # SPOTIFY
 alias housefocus="spotify play uri spotify:playlist:37i9dQZF1DX8wtrGDH81Oa"
