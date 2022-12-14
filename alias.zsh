@@ -13,6 +13,8 @@ alias bleh="bundle exec rspec -fd"
 # NAVIGATION
 alias t="take" # oh-my-zsh shortcut for mkdir -> cd into
 alias up="cd .."
+alias upp="cd ../.."
+alias uppp="cd ../../.."
 alias blog="cd ~/documents/blog"
 alias docs="~/documents"
 alias turing="cd ~/documents/turing/"
@@ -48,7 +50,7 @@ alias	gst="git stash"
 alias	gsp="git stash pop"
 alias	gss="git stash save"
 alias	gsl="git stash list"
-alias dangit="git commit --ammend" # edit last commit msg and add staged to that commit
+alias dangit="git commit --amend" # edit last commit msg and add staged to that commit
 alias whoops="git reset --soft HEAD^" # undo last unpushed commit
 
 # Switch ls to exa (install exa via homebrew)
