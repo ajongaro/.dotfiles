@@ -47,10 +47,13 @@ require('packer').startup(function(use)
   use 'tpope/vim-fugitive'
   use 'tpope/vim-rhubarb'
   use 'lewis6991/gitsigns.nvim'
+  use 'sunjon/shade.nvim'
 
   -- tpope-ify
-  use 'tpope/endwise' -- Add ends to Ruby
+  use 'tpope/endwise.vim' -- Add ends to Ruby
   use 'tpope/vim-surround' -- Obviously
+  use 'vim-repeat' -- Periods
+  use 'vim-rails'
   use 'morhetz/gruvbox' -- No other theme compares 
   use 'easymotion/vim-easymotion' -- Maybe remove later
   use 'nvim-lualine/lualine.nvim' -- Fancier statusline
@@ -428,5 +431,15 @@ cmp.setup {
   },
 }
 
+require'shade'.setup({
+  overlay_opacity = 50,
+  opacity_step = 1,
+  keys = {
+    brightness_up    = '<C-Up>',
+    brightness_down  = '<C-Down>',
+    toggle           = '<Leader>s',
+  }
+})
+--
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
