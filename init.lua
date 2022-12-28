@@ -48,8 +48,11 @@ require('packer').startup(function(use)
   use 'tpope/vim-rhubarb'
   use 'lewis6991/gitsigns.nvim'
 
-  use 'morhetz/gruvbox' -- Theme by the best thing ever
-  -- use 'naavarasu/onedark.nvim' -- Theme inspired by Atom
+  -- tpope-ify
+  use 'tpope/endwise' -- Add ends to Ruby
+  use 'tpope/vim-surround' -- Obviously
+  use 'morhetz/gruvbox' -- No other theme compares 
+  use 'easymotion/vim-easymotion' -- Maybe remove later
   use 'nvim-lualine/lualine.nvim' -- Fancier statusline
   use 'lukas-reineke/indent-blankline.nvim' -- Add indentation guides even on blank lines
   use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
@@ -157,7 +160,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 require('lualine').setup {
   options = {
     icons_enabled = false,
-    theme = 'onedark',
+    theme = 'gruvbox',
     component_separators = '|',
     section_separators = '',
   },
