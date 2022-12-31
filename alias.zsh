@@ -26,6 +26,7 @@ alias dot="cd ~/.dotfiles"
 alias notes="cd ~/documents/dev-notes"
 alias vimconfig="vim ~/.dotfiles/init.vim"
 alias maintain="cd ~/documents/turing/2module/maintain"
+alias vvv="vim ~/.dotfiles/init.lua"
 
 # TURING STUFF
 alias studyhall="open https://turingschool.zoom.us/my/cohort2210be"

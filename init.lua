@@ -47,13 +47,11 @@ require('packer').startup(function(use)
   use 'tpope/vim-fugitive'
   use 'tpope/vim-rhubarb'
   use 'lewis6991/gitsigns.nvim'
-  use 'sunjon/shade.nvim'
 
-  -- tpope-ify
-  use 'tpope/endwise.vim' -- Add ends to Ruby
+  use 'tpope/vim-endwise' -- Add ends to Ruby
   use 'tpope/vim-surround' -- Obviously
-  use 'vim-repeat' -- Periods
-  use 'vim-rails'
+  use 'tpope/vim-rails' -- Obviously
+  use 'tpope/vim-repeat' -- Periods
   use 'morhetz/gruvbox' -- No other theme compares 
   use 'easymotion/vim-easymotion' -- Maybe remove later
   use 'nvim-lualine/lualine.nvim' -- Fancier statusline
@@ -107,6 +105,8 @@ vim.o.hlsearch = false
 
 -- Make line numbers default
 vim.wo.number = true
+-- Make line numbers relative
+vim.o.relativenumber = true
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
@@ -228,7 +228,7 @@ vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { de
 -- See `:help nvim-treesitter`
 require('nvim-treesitter.configs').setup {
   -- Add languages to be installed here that you want installed for treesitter
-  ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'typescript', 'help' },
+  ensure_installed = { 'ruby', 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'typescript', 'help' },
 
   highlight = { enable = true },
   indent = { enable = true, disable = { 'python' } },
@@ -431,15 +431,5 @@ cmp.setup {
   },
 }
 
-require'shade'.setup({
-  overlay_opacity = 50,
-  opacity_step = 1,
-  keys = {
-    brightness_up    = '<C-Up>',
-    brightness_down  = '<C-Down>',
-    toggle           = '<Leader>s',
-  }
-})
---
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
