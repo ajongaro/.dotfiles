@@ -5,12 +5,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 eval "$(rbenv init -)"
-
-# Get thefuck to work (esc-esc) to fix last command
-# eval $(thefuck --alias)
 
 # export PKG_CONFIG_PATH="/opt/homebrew/opt/libpq/lib/pkgconfig"
 # export LDFLAGS="-L/opt/homebrew/opt/libpq/lib"
@@ -89,14 +85,15 @@ ZSH_CUSTOM=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}
 plugins=(
   git
   zsh-autosuggestions
+  zsh-syntax-highlighting
+  fzf
   web-search
   history
   copyfile
-  macos
   copypath
+  macos
   thefuck
   cd-ls
-  emoji
   colored-man-pages
 )
 
